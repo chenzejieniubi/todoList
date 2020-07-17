@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #efefef;
+	font-size: 16px;
+}
+
+#app{
+	width: 400px;
+}
+
+.main{
+	width:400px;
+	/* display: flex;
+	flex-direction: column; */
+}
+
+.header{
+	width: 400px;
+	height: 50px;
+	/* border: #FF4500 4px; */
+	background: deepskyblue;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+}	
+
+.header>.logo{
+	width: 100px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 20px;
+	font-weight: 90000;
+}
+
+.header>input{
+	width: 300px;
+	height: 20px;
+	margin: 0 20px;
+	border-radius: 15px;
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+}
+	
+.todo h3{
+	height: 20px;
+	line-height: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+.todo .list{
+	padding: 0 20px;
+}
+
+.todo .todoItem{
+	display: flex;
+	height: 20px;
+	line-height: 20px;
+	align-items: center;
+	background: lightcyan;
+	border-radius: 15px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.todo .todoItem:before{
+	width: 10px;
+	height: 10px;
+	background: deepskyblue;
+	content: "";
+}
+
+.todo .todoItem>input{
+	width: 10px;
+	height: 10px;
+	margin: 0 10px;
+}
+
+.todo .todoItem .content{
+	width: 280px;
+	color: #333;
+}
+
+.todo .todoItem .del{
+	background: orangered;
+	width: 25px;
+	height: 12px;
+	font-size: 5px;
+	text-align: center;
+	line-height: 12px;
+	border-radius: 10px;
+	margin: 0 10px;
+	color: #fff;
+}
+
+.done .todoItem{
+	opacity: 0.3;
+	-webkit-filter: grayscale(1);
+}
+
+.pc{
+	font-size: 200px !important; //提高优先级
+}
